@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header ul li{
+    @apply 
+    px-3
+     py-2 
+    /*  text-gray-700 
+    hover:bg-gray-200; */
+}
+.head{
+    background: rgb(85, 81, 227 );
+}
+.mobile ul{
+    @apply   fixed top-9 bg-slate-300 w-full h-auto text-black
+    left-0 text-center ;
+}
+.mobile-nav li{
+    @apply border-b-2;
+}
+/* end of header css */
+
+.color-home{
+    background:#2b2d77;
+    @apply px-5 py-32 ; 
+
+}
+.color-home h1{ 
+@apply text-white text-6xl  font-hero-font  justify-center px-0 m-5
+}
+.icons{
+    @apply flex gap-5 m-5;
+}
+/* end of home page css */
+
+.about-section{
+    background:rgb(85, 81, 227) ;
+    @apply flex font-hero-font justify-center
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-img{
+ @apply py-32 px-5
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-con{
+    @apply  py-32 px-5 text-white  text-center text-4xl
+    
 }
